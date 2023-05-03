@@ -35,6 +35,87 @@ button {
   cursor: pointer;
 }
 
+.contact {
+  background: rgb(235, 235, 235);
+  margin: 40px auto 90px;
+  max-width: 73%;
+  display: flex;
+  justify-content: space-between;
+}
+.contact form {
+  display: flex;
+  flex-direction: column;
+  margin: 70px 50px 70px;
+}
+.contact label {
+  font-family: "font1", sans-serif;
+  color: rgb(90, 90, 90);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+.contact input[type=text] {
+  height: 50px;
+}
+.contact textarea {
+  resize: none;
+  height: 220px;
+}
+.contact input[type=text],
+.contact textarea {
+  width: 220%;
+  margin: 20px 0 20px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  transition: 0.2s;
+  background: transparent;
+}
+.contact input[type=text]:focus,
+.contact textarea:focus {
+  border: 1px solid rgb(0, 0, 0);
+}
+.contact input[type=submit] {
+  background: transparent;
+  border: 2px solid grey;
+  text-transform: uppercase;
+  font-family: "font1", sans-serif;
+  color: rgb(90, 90, 90);
+  font-size: 1.3rem;
+  padding: 13px 30px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+.contact .info {
+  display: flex;
+  flex-direction: column;
+  margin: 70px 0 70px;
+}
+.contact .info h5 {
+  font-family: "font1", sans-serif;
+  color: rgb(90, 90, 90);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+.contact .info p {
+  font-family: "font2", sans-serif;
+  color: rgb(110, 110, 110);
+}
+.contact .info a {
+  border: solid 1px rgb(170, 170, 170);
+  border-radius: 50px;
+  width: 80px;
+  height: 80px;
+}
+.contact .info .address {
+  display: flex;
+}
+.contact .info .address p {
+  margin-right: 20px;
+}
+
 nav {
   display: flex;
   justify-content: center;
@@ -107,7 +188,7 @@ nav {
 .section-2 {
   text-align: center;
   background: rgb(250, 250, 250);
-  width: 73%;
+  max-width: 73%;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -116,6 +197,24 @@ nav {
 .section-2 h5 {
   font-family: "font2", sans-serif;
   margin: 60px auto;
+}
+.section-2 h5:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 22%;
+  background: rgba(0, 0, 0, 0.082);
+  left: 50%;
+  transform: translateX(30%);
+}
+.section-2 h5::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 22%;
+  background: rgba(0, 0, 0, 0.082);
+  left: 30%;
+  transform: translateX(-50%);
 }
 .section-2 h2 {
   text-transform: uppercase;
@@ -140,4 +239,47 @@ nav {
   justify-content: center;
   align-items: center;
   margin: 60px auto 90px;
+}
+
+.section-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background: rgb(250, 250, 250);
+  width: 73%;
+}
+.section-3 div.magna {
+  text-align: center;
+}
+.section-3 div.eget {
+  text-align: center;
+}
+.section-3 h5 {
+  font-family: "font2", sans-serif;
+  margin: 100px auto 30px;
+}
+.section-3 h3 {
+  text-transform: uppercase;
+  font-family: "font1", sans-serif;
+  font-size: 1.5rem;
+  max-width: 39%;
+  margin: 0 auto;
+  letter-spacing: 3px;
+  line-height: 35px;
+  margin: 0 auto 25px;
+}
+.section-3 img {
+  width: 550px;
+}
+.section-3 p {
+  font-family: "font2", sans-serif;
+  max-width: 80%;
+  margin: 40px auto 40px;
+  line-height: 35px;
+  text-align: center;
+  text-align: justify;
+}
+.section-3 button {
+  margin: 0 auto 70px;
 }/*# sourceMappingURL=index.css.map */
